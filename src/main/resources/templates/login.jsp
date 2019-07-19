@@ -1,0 +1,199 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isELIgnored="false" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>登录</title>
+    <link type="text/css" rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.md5.js"></script>
+    <style type="text/css">
+
+        .theme {
+            background-image: url(https://uk.imageservice.sky.com/contentid/iYsxVQhsSbWDXxYHDcwC6f/LAND_16_9-SEASON);
+            animation: theme 3s ease-in-out infinite;
+            animation-direction: alternate;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-backface-visibility: hidden;
+        }
+
+        @keyframes theme {
+            0% {
+                background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558699918307&di=999fa5bdb1a9b764a04ca7df7d20a61b&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201505%2F24%2F20150524221849_FYHky.thumb.700_0.gif);
+
+            }
+            100% {
+            / / background-image: url(image/pika.jpg);
+                background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558699918307&di=999fa5bdb1a9b764a04ca7df7d20a61b&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201505%2F24%2F20150524221849_FYHky.thumb.700_0.gif);
+            }
+        }
+
+        .theme-gif {
+            mix-blend-mode: screen;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 400px;
+            background-position: center top;
+            background-image: url(https://img.zcool.cn/community/038a4f2586b6d30a8012060c873f410.gif);
+        }
+
+        .input {
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            margin-bottom: 15px;
+            outline: none;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #c6e4f3;
+        }
+
+        body {
+            color: #fff;
+        }
+
+        .form {
+            margin: auto;
+            border-radius: 1.5em;
+            background-color: rgba(0, 0, 0, 0.3);
+            overflow: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: auto;
+            height: auto;
+            max-height: 80%;
+            -webkit-transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+<div class="theme"
+     style="width: 100%;height: 100%;background: #222; background-size: cover; background-position:center;">
+    <div class="theme-gif"></div>
+
+
+    <div class="col-md-6 col-md-offset-3 form">
+
+        <form action="/login_check.do" method="post" onsubmit="return checkForm()">
+            <div>
+                </br>
+                <h4 style="text-align:center;">pikapika</h4>
+                <p style="border-top: 1px solid #d3d3d3;"></p>
+            </div>
+
+            <div>
+                <input class="input" type="text" name="userName" placeholder=" 用户名" class="form-control"
+                       style="width:300px"/>
+            </div>
+
+            <div>
+                <!-- 第一个没有name属性不会被提交 -->
+                <input class="input" type="password" placeholder=" 密码" class="form-control" id="input-password"
+                       style="width:300px"/>
+            </div>
+            <input type="hidden" name="userPassWord">
+            <!--
+             <div class="form-group">
+                <label>验证码：</label>
+                <input type="text" name="verifyCode" size="5" />
+                <img src="VerifyCode.do"/> <br/>
+                <input type="password" name="yzm" placeholder="验证码" class="form-control"  style="width:300px"/>
+              </div>
+               -->
+
+            <div>
+                <p>
+                    <button type="submit" class="input" style="margin-bottom: 0px;">登录</button>
+                    | <a href="register.do" style='color:#FFFFFF'>注册</a></p>
+            </div>
+
+            <div>
+                <p style="border-top: 1px solid #d3d3d3;"></p>
+
+                <h6 style="text-align:right;color:red;">${ fail_message }</h6>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- scripts -->
+<script>
+    //md5
+    function checkForm() {
+        alert("okok");
+        var input_pwd = document.getElementById('input-password');
+        //var salt = document.getElementById('salt');
+        var md5_pwd = document.getElementsByName('userPassWord')[0];
+        //salt.value = "cqjtu"+(new Date()).valueOf().toString();
+        // 把用户输入的明文+salt进行MD5加密
+        console.log(md5_pwd.value);
+        md5_pwd.value = $.md5(input_pwd.value);
+
+        console.log(md5_pwd.value);
+
+        return true;
+    }
+
+    if (${islogincg} +'' === 0 + '') {//如果直接写if(${islogincg}===0)登录失败的话，${islogincg}刚开始是没有的所有是 ===0，左边什么都没有会报错
+        alert("登录失败");
+    }
+
+    //爱心动画点击效果
+    !function (e, t, a) {
+        function r() {
+            for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+            requestAnimationFrame(r)
+        }
+
+        function n() {
+            var t = "function" == typeof e.onclick && e.onclick;
+            e.onclick = function (e) {
+                t && t(), o(e)
+            }
+        }
+
+        function o(e) {
+            var a = t.createElement("div");
+            a.className = "heart", s.push({
+                el: a,
+                x: e.clientX - 5,
+                y: e.clientY - 5,
+                scale: 1,
+                alpha: 1,
+                color: c()
+            }), t.body.appendChild(a)
+        }
+
+        function i(e) {
+            var a = t.createElement("style");
+            a.type = "text/css";
+            try {
+                a.appendChild(t.createTextNode(e))
+            } catch (t) {
+                a.styleSheet.cssText = e
+            }
+            t.getElementsByTagName("head")[0].appendChild(a)
+        }
+
+        function c() {
+            return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+        }
+
+        var s = [];
+        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+            setTimeout(e, 1e3 / 60)
+        }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()
+    }(window, document);
+
+</script>
+</body>
+</html>

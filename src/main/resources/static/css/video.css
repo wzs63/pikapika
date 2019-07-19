@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+.headline{
+	width: 100%;
+	height: 250px;
+}
+.player{
+	width: 100%;
+}
+.player-nav{
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+	height: 161px;
+	padding: 25px 0 25px;
+}
+.player-nav-synopsis{
+	width:580px;
+	height: 161px;
+	float: left;
+	display: inline-block;
+}
+.player-nav-intro{
+	width: 580px;
+	height: 50px;
+	font-size: 14px;
+	line-height: 50px;
+}
+.intro-sort{
+	display: inline;
+	
+}
+.player-nav-intro a{
+	text-decoration: none;
+	color:#F50707;
+	cursor: pointer;
+}
+.count-wrapper{
+	width: 580px;
+	height: 80px;
+}
+.wrapper-count{
+	position: relative;
+	display: inline;
+	width: 150px;
+	height: 50px;
+	float: left;
+}
+.wrapper-img{
+	position: absolute;
+	width: 80px;
+	height: 50px;
+	border-radius: 10px;
+	background-image: url(../image/h3.jpg);
+	background-size: contain;
+}
+.wrapper-fount{
+	position: absolute;
+	line-height: 50px;
+	left: 90px;
+}
+.ad{
+	width: 300px;
+	height: 161px;
+	display: inline;
+	float: right;
+	position: relative;
+	
+}
+.ad-content{
+	cursor: pointer;
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	top: 61px;
+	right: 20px;
+	background-color:yellow;
+	color: red;
+	border-radius: 10px;
+	font-weight: 600;
+	line-height: 40px;
+	text-align: center;
+}
+.ad-img{
+	width: 100px;
+	height: 161px;
+	position: absolute;
+	left: 20px;
+	background-image: url(../image/baoerjie.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.player-module{
+	width: 980px;
+	height: 635px;
+	margin: 0 auto;
+}
+.player-detail{
+	float: left;
+	width: 580px;
+	height: 485px;
+}
+#player{
+	margin-top: 10px;
+	width: 600px;
+	height: 400px;
+	background-color: #000000;
+}
+#player-control{
+	width: 580px;
+	height: 50px;
+}
+.player-content{
+	width: 580px;
+	height: 100px;
+	display: inline;
+}
+.recommend-box{
+	width: 350px;
+	height: 600px;
+	float: right;
+	overflow: hidden;
+}
+.recommend-detail{
+	display: block;
+	height: 550px;
+	width: 350px;
+
+}
+.video-recommend{
+	display: block;
+	cursor: pointer;
+	width:350px;
+	height: 100px;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #A2A2A2;
+	margin-bottom: 10px;
+}
+.video-recommend-frame{
+	position: relative;
+	width: 350px;
+	height: 100px;
+}
+.video-recommend-structure{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	z-index: 10;
+	
+}
+.video-recommend-cover{
+	position: absolute;
+	z-index: 5;
+	top:50%;
+	left: 30px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin-top: -20px;
+	border-radius: 50%;
+	background-color: aliceblue;
+	background-image: url(../image/button.png);
+	background-size: contain;
+}
+.video-recommend-label{
+	position: absolute;
+	width:230px;
+	height: 100px;
+	z-index: 10;
+	right: 0px;
+}
+.video-recommend-label p{
+	font-size: 16px;
+	line-height: 33px;
+	color:#BBBBBB;
+/*	text-indent:25px;*/
+	cursor: pointer;
+	font-weight: 400;
+}
+.video-recommend-label p:hover{
+	color: #F3A600;
+}
+.background{
+	width: 100%;
+	height: 606px;
+	background-color:#F4F4F4;
+}
+.recommend-box h2{
+	line-height: 40px;
+}
+.heart-box{
+	position: absolute;
+	width: 42.43px;
+	height: 42.43px;
+	top:50%;
+	margin-top: -21.21px;
+	right: -150px;
+}
+.heart{ 
+	position: relative;
+	width: 30px;
+	height: 30px;
+	transform: rotate(45deg);
+}
+ .heart div{
+	 position: absolute;
+	 width: 20px;
+	 height: 20px;
+	 background-color:#FFFFFF;
+}
+.heart-show{
+	background-color: red !important;
+}
+ .heart .middle{ 
+	 right: 0;
+	 bottom: 0;
+	 width: 20px;
+	 height: 20px;
+}
+ .heart .left{
+     left: 0;
+	 bottom: 0;
+	 border-radius: 50%;
+}
+ .heart .right{
+	 top: 0;
+	 right: 0;
+	 border-radius: 50%;
+}

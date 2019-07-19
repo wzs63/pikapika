@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+		.beijing{
+			position: relative;
+			width:100%;
+			height: 650px;
+			background-image: url('../image/3725324bbd7f7b9af4aca2709e44f8c9.jpg');
+		}
+		.touxiang{
+			position: absolute;
+			left: 50%;
+			top: 100px;
+			margin-left: -75px;
+			width: 150px;
+			height: 150px;
+			border: 2px solid black;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		.xinxi{
+			width: 150px;
+			height: 100px;
+			position: absolute;
+			left: 50%;
+			margin-left: -75px;
+			top: 260px;
+		}
+		.xinxi h1{
+			text-align: center;
+			font-style: normal;
+			color: aliceblue;
+		}
+		.xinxi div ul li{
+			display: inline-block;
+			color: beige;
+		}
+		.xinxil{
+			position: absolute;
+			left: 50%;
+			margin-left: -300px;
+			top: 360px;
+			width: 600px;
+			height: 100px;
+		}
+		.xinxil-li{
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			margin-left: 75px;
+			display:inline-block;
+			color: aliceblue;
+		}
+		.fon{
+			font-family: "Arial";
+			font-size: 50px;
+		}
+		 ul{
+       	 list-style: none;
+       }
+
+		table.hovertable {
+		 font-family: verdana,arial,sans-serif;
+		 font-size:20px;
+		 color:aliceblue;
+		 border-width: 1px;
+		 border-color: #999999;
+/*		 border-collapse: collapse;*/
+		 margin-top: 50px;
+		 border-spacing: 30px 10px;
+	    }
+		table.hovertable tr {
+		 background-color:#B7AAB2;
+		 margin-top: 20px;
+		}
+ 		table.hovertable td {
+		 border-width: 1px;
+		 padding: 8px;
+		 border-style: solid;
+		 border-color:#AFA5A5;
+		}
+		.td-c{
+			width: 700px;
+		}
+		.qianming{
+			width: 100%;
+			height: 200px;
+		}
+		.qianming-c{
+			text-align: center;
+			margin-top: 20px;
+			line-height: 50px;
+			font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		}
+ img{
+	width: 100%;
+	height: 100%;
+}
+.content-box{
+	display: block;
+	width: 900px;
+	height:1050px;
+	margin: auto;
+}
+.content-box-nav{
+	border-radius: 5px;
+	margin-bottom: 10px;
+	display: block;
+	width: 900px;
+	height: 80px;
+	transition:border-bottom 0.2s linear;
+	
+}
+.content-box-nav:hover{
+	border-bottom: 3px solid #000000;
+	font-weight: 700;
+}
+.content-box-nav h2{
+	float: left;
+	user-select: none;
+	width: 200px;
+	height: 80px;
+	font-size: 25px;
+	line-height: 80px;
+	font-weight: 400;
+	font-family: iconfont;
+	display: inline-block;
+}
+.count{
+	width:200px;
+	height: 80px;
+	float: right;
+	text-decoration: none;
+}
+.count-all{
+	margin-top: 20px;
+	float: left;
+	width: 100px;
+	height: 40px;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 40px;
+	color: #727171;
+}
+.button1{
+	margin-top: 20px;
+		width: 40px;
+		height: 40px;
+		font-size: 25px;
+		color: #000000;
+		user-select: none;
+		border-radius: 20px;
+		line-height: 40px;
+		text-align: center;
+		overflow: hidden;
+		background-color: #f2f2f2;
+		font-family: iconfont;
+		cursor: pointer;
+		transition: opacity 0.2s linear;
+		transition: background-color 0.2s linear;
+		}
+.button1:hover{
+	background-color:#FF6E00;
+}
+.content-detail-show{
+	display: none !important;
+}
+.content-box-show{
+	height: 80px !important;
+}
+.heart-box{
+	position: absolute;
+	width: 42.43px;
+	height: 42.43px;
+	top:50%;
+	margin-top: -21.21px;
+	right: 80px;
+}
+.heart{ 
+	position: relative;
+	width: 30px;
+	height: 30px;
+	transform: rotate(45deg);
+}
+ .heart div{
+	 position: absolute;
+	 width: 20px;
+	 height: 20px;
+	 background-color:#FFFFFF;
+}
+.heart-show{
+	background-color: red !important;
+}
+ .heart .middle{ 
+	 right: 0;
+	 bottom: 0;
+	 width: 20px;
+	 height: 20px;
+}
+ .heart .left{
+     left: 0;
+	 bottom: 0;
+	 border-radius: 50%;
+}
+ .heart .right{
+	 top: 0;
+	 right: 0;
+	 border-radius: 50%;
+}

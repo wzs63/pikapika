@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+.banner{
+	width: 100%;
+	height: 900px;
+}
+.ban-1{
+	background-image: url(../image/backgrounds/banner-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	
+}
+.ban-container h1{
+	line-height: 90px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-bottom: 30px;
+	color: #fff;
+	font-size: 60px;
+	font-family: "Open Sans", sans-serif;
+}
+.ban-container h5{
+	font-size: 20px;
+	font-weight: 400;
+    line-height: 1;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+}
+.vip{
+	width: 200px;
+	height: 70px;
+	margin-top: 50px;
+	border-radius: 10px;
+	background-color: #000000;
+}
+.ordinary{
+	margin-left: 50px;
+	text-align: center;
+	line-height: 70px;
+	font-family:  "Open Sans", sans-serif;
+	font-size: 25px;
+	color: aliceblue;
+}
+.ban-container{
+	position: absolute;
+	top:200px;
+	left: 100px;
+	width: 640px;
+	height: 400px;
+}
+.ban-image{
+	width: 290px;
+	height: 560px;
+	position: absolute;
+	right: 100px;
+	top:50px;
+}
+.privilege{
+	
+}

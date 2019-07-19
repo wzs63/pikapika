@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content-detail{
+	display: block;
+	height: 1050px;
+	width: 900px;
+
+}
+.content-detail .video-common{
+	display: block;
+	cursor: pointer;
+	width:900px;
+	height: 184px;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #A2A2A2;
+	margin-bottom: 10px;
+}
+.video-common-frame{
+	margin-top: 10px;
+	position: relative;
+	width: 900px;
+	height: 164px;
+}
+.video-common-structure{
+	position: absolute;
+	width: 164px;
+	height: 164px;
+	z-index: 10;
+	
+}
+.video-common-cover{
+	position: absolute;
+	z-index: 5;
+	top:50%;
+	left: 62px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin-top: -20px;
+	border-radius: 50%;
+	background-color: aliceblue;
+	background-image: url('../image/button.png');
+	background-size: contain;
+}
+.video-common-label{
+	position: absolute;
+	width:450px;
+	height: 164px;
+	z-index: 10;
+	right: 260px;
+}
+.video-common-label p{
+	font-size: 16px;
+	line-height: 54px;
+	color:#BBBBBB;
+/*	text-indent:25px;*/
+	cursor: pointer;
+	font-weight: 400;
+}
+.video-common-label p:hover{
+	color: #F3A600;
+}

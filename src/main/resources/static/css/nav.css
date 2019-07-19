@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	cursor:auto;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+ul{
+	list-style: none;
+}
+li{
+	list-style:none;
+}
+.nav-a{
+	position: fixed;
+	width:100%;
+	height:50px;
+	background-color: 000000;
+	background: rgba(0,0,0,0.1);
+	z-index: 15;
+}
+.log{
+	position: absolute;
+	width:120px;
+	height: 50px;
+	user-select: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.nav-b{
+	position: absolute;
+	width:120px;
+	height: 50px;
+	font-weight:bold;
+	line-height:50px;
+	cursor: pointer;
+	text-align: center;
+	color:aliceblue;
+	text-decoration: none;
+	overflow: hidden;
+/*	background-color: #1021DC;*/
+/*	background: rgba(0,0,0,0.5);*/
+	
+}
+.ChatHead{
+	position: absolute;
+	border: 2px solid #F9F9F9;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	bottom:3px;
+	left: 1120px;
+}
+#Chathead{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+ #box{
+	 	position: absolute;
+        width: 380px;
+        left: 670px;
+	    top:10px;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+    }
+    .nav-input{
+        width: 260px;
+        border: 1px solid #e2e2e2;
+        height: 30px;
+        float: left;
+        background-image: url("/image/search.jpg");
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position:5px center;
+        padding:0 0 0 40px;
+    }
+    #search{
+        width: 78px;
+        height: 32px;
+        float: right;
+        background: black;
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+    }
+.shader{
+	margin-top: -90px;
+	margin-left: -130px;
+	width: 130px;
+	height: 130px;
+	background-color:#FF6E00;
+	border-radius:50%;
+	transition:margin-left 0.4s;
+}
+.shadow{
+	margin-left: -5px;
+}
